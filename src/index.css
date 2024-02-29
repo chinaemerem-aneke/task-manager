@@ -1,13 +1,61 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  min-height: 100vh;
+  background: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input[type=text]{
+  width: min(600px, 50%);
+  padding: .8rem 1rem;
+  background: transparent;
+  border: none;
+  /* outline: none; */
+}
+
+input[type=checkbox]{
+  width: 30px;
+  aspect-ratio: 1;
+}
+
+button {
+  color: #fff;
+  background: green;
+  border: none;
+  border-radius: .5em;
+  outline: none;
+  padding: .8rem 1.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(24, 83, 31)
+}
+
+.task {
+  width: min(600px, 50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.task *:hover{
+  cursor: pointer;
+  align-items: center;
+}
+
+.task * {
+  margin-top: 1rem;
+}
+
+.delete-btn {
+  background: red;
+}
+
+.delete-btn:hover {
+  background: rgb(189, 8, 8);
 }
